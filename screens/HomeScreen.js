@@ -8,30 +8,7 @@ const categories = [
   { title: '📰 NOTICIAS', image: require('../assets/news.png') },
 ];
 
-export const HomeScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>⚡ FutbolLive</Text>
-      <View style={styles.navbar}>
-        <TouchableOpacity><Text style={styles.navItem}>Inicio</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.navItem}>Ligas</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.navItem}>Equipos</Text></TouchableOpacity>
-      </View>
-      {categories.map((category, index) => (
-        <TouchableOpacity key={index} style={styles.card}>
-          <ImageBackground source={category.image} style={styles.image} imageStyle={{ borderRadius: 15 }}>
-            <Text style={styles.cardText}>{category.title}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
-      ))}
-      <View style={styles.footer}>
-        <TouchableOpacity><Text style={styles.footerItem}>⚽</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.footerItem}>🛍️</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.footerItem}>⚙️</Text></TouchableOpacity>
-      </View>
-    </View>
-  );
-};
+
 
 const styles = StyleSheet.create({
   container: {
