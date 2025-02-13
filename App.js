@@ -1,10 +1,11 @@
-// App.js - Componente Principal
-import { MatchInfo } from './components/MatchInfo';
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import { HomeScreen } from './screens/HomeScreen';
 
-const App = () => {
+export default function App() {
   return (
-    <MatchInfo />
+    <SafeAreaView style={{ flex: 1 }}>
+      <HomeScreen />
+    </SafeAreaView>
   );
-};
-
-export default App;
+}
